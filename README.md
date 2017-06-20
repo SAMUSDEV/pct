@@ -18,5 +18,5 @@ Updating
 
 Usage
 --------
-pct_timestamp 1497985030
-pct_hex_to_bin ff0000
+* pct_timestamp 1497985030
+* pct_hex_to_bin ff0000
