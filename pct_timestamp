@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+
+<?php
+
+setlocale(LC_ALL, "pt_BR");
+date_default_timezone_set("America/Sao_Paulo");
+
+$timestamp 	= isset($argv[1]) ? $argv[1] : "";
+$date 		= DateTime::createFromFormat("U", $timestamp);
+
+if(!$date) {
+	echo "invalid timestamp! =/";
+	echo "\n";
+	echo "\n";
+	exit();
+}
+
+$date = $date->format("d/m/Y H:i:s");
+
+echo "${timestamp} = ${date}";
+echo "\n";
+echo "\n";

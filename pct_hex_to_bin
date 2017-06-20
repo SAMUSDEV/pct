@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+
+<?php
+
+$hex 	= isset($argv[1]) ? $argv[1] : "";
+$bin	= base_convert($hex, 16, 2);
+
+echo "${hex} = ${bin}";
+echo "\n";
+echo "\n";

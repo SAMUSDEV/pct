@@ -1,0 +1,15 @@
+<?php
+function build() {
+	echo "build";
+	echo "\n";
+
+	//$cmd
+}
+
+function run() {
+	$cmd = "ptimestamp 1497985546";
+	echo shell_exec($cmd);
+
+	$cmd = "phex_to_bin ff0000";
+	echo shell_exec($cmd);
+}
